@@ -3,5 +3,7 @@ layout: home
 title: Home
 ---
 
-## Hello, I’m Thien Nguyen 👋
-Your landing-page content here…
+## Hello, I’m Your Name 👋
+
+Welcome to my personal site. I’m a researcher in XYZ.  
+Feel free to connect [on LinkedIn](https://linkedin.com/in/yourname).

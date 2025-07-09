@@ -1,0 +1,66 @@
+<div class="publications">
+  {% assign pubs = site.data.publications | sort: "year" | reverse %}
+  {% assign grouped = pubs | group_by: "year" %}
+  {% assign pub_index = 0 %}
+
+  {% for year in grouped %}
+    <div class="year-block">
+      <div class="pub-year">{{ year.name }}</div>
+
+      {% for pub in year.items %}
+        <div class="pub-entry">
+          {% if pub.badge %}
+            <span class="pub-badge">{{ pub.badge }}</span>
+          {% endif %}
+
+          <div class="pub-title"><strong>{{ pub.title }}</strong></div>
+          <div class="pub-authors">{{ pub.authors | markdownify }}</div>
+          <!-- <div class="pub-venue"><em>{{ pub.venue }}</em></div> -->
+          <div class="pub-venue">{{ pub.venue | raw }}</div>
+          <div class="pub-buttons">
+            {% if pub.abstract_text %}
+              <button class="btn toggle-btn" data-target="abstract-{{ pub_index }}">Abstract</button>
+            {% endif %}
+            {% if pub.pdf %}
+              <a class="btn" href="{{ pub.pdf }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if pub.bibtex_text %}
+              <button class="btn toggle-btn" data-target="bibtex-{{ pub_index }}">Bibtex</button>
+            {% endif %}
+          </div>
+
+          {% if pub.abstract_text %}
+            <div class="toggle-content" id="abstract-{{ pub_index }}">
+              <p>{{ pub.abstract_text }}</p>
+            </div>
+          {% endif %}
+
+          {% if pub.bibtex_text %}
+            <div class="toggle-content bibtex" id="bibtex-{{ pub_index }}">
+<pre><code>{{ pub.bibtex_text }}</code></pre>
+            </div>
+          {% endif %}
+
+          {% assign pub_index = pub_index | plus: 1 %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".toggle-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const targetId = btn.getAttribute("data-target");
+      const content = document.getElementById(targetId);
+      if (content) {
+        content.classList.toggle("show");
+      }
+    });
+  });
+});
+</script>
+
+
+

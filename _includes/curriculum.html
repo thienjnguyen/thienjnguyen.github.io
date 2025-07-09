@@ -1,0 +1,119 @@
+<div class="curriculum-section">
+  <h2>Education</h2>
+  <div class="curriculum-group">
+    {% for item in site.data.curriculum.education %}
+      <div class="curriculum-entry">
+        <div class="content-column">
+          <h3>{{ item.degree }}</h3>
+          <p><strong>{{ item.institution }}</strong>, {{ item.location }}</p>
+          <ul class="description-list">
+            {% for point in item.description %}
+              <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
+          <!-- <p>{{ item.description }}</p> -->
+        </div>
+        <div class="timeline-column">
+          <p>{{ item.start }} – {{ item.end }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- 🔽 Line separator between Education and Experience -->
+  <hr class="section-divider">
+
+  <h2>Experience</h2>
+  <div class="curriculum-group">
+    {% for item in site.data.curriculum.experience %}
+      <div class="curriculum-entry">
+        <div class="content-column">
+          <h3>{{ item.title }}</h3>
+          <p><strong>{{ item.company }}</strong>, {{ item.location }}</p>
+          <p>{{ item.description }}</p>
+        </div>
+        <div class="timeline-column">
+          <p>{{ item.start }} – {{ item.end }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <h2 id="full-cv">📄 Full CV</h2>
+  <p>
+    You can download my complete curriculum vitae here: <br>
+    <a href="/assets/files/CV_Thien_NGUYEN.pdf" target="_blank">
+      Download CV (PDF)
+    </a>
+  </p>
+
+</div>
+
+<style>
+.curriculum-section {
+  max-width: 100%; width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-size: 1.0rem;
+}
+
+.curriculum-entry {
+  display: grid;
+  grid-template-columns: 3fr 180px;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.content-column h3 {
+  margin: 0 0 0.2rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.content-column p {
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* 🔵 Institution or Company name in dark navy blue */
+.content-column p strong {
+  color: #555; /* Medium gray */
+}
+
+.timeline-column p {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: right;
+}
+
+/* 🔽 New divider styling */
+.section-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+}
+
+.description-list {
+  margin: 0.2rem 0;
+  padding-left: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.description-list li {
+  margin-bottom: 0.3rem;
+  list-style-type: disc;
+}
+
+#full-cv {
+  margin-top: 3rem;
+}
+
+#full-cv + p a {
+  color: #003366;
+  font-weight: 600;
+  text-decoration: underline;
+}
+</style>
+
+

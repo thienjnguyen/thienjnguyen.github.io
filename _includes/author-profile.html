@@ -240,6 +240,30 @@
         </li>
       {% endif %}
 
+      {% if author.researchgate %}
+        <li>
+          <a
+            href="https://www.researchgate.net/profile/{{ author.researchgate }}"
+            title="ResearchGate"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-researchgate fa-fw" aria-hidden="true"></i><span class="label">ResearchGate</span>
+          </a>
+        </li>
+      {% endif %}
+      
+      {% if author.custom_links %}
+        {% for link in include.author.custom_links %}
+          <li>
+            <a href="{{ link.url }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+              <i class="{{ link.icon | default: 'fas fa-fw fa-link' }}" aria-hidden="true"></i>
+              <span class="label">{{ link.label }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>

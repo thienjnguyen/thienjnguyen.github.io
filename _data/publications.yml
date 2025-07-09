@@ -1,0 +1,186 @@
+- title: "SmartNMC: A 1Mb-200µW-20fps near-imager spatio-temporal inference hardware module"
+  authors: "William Guicquero, Nicolas Pelletier, **Thien Nguyen**, Jean-Phillipe Noel, Manuel Pezzin, Marjorie Gary, Sylvain Choisnet"
+  venue: "In <em>IEEE Symposium on Circuits and Systems (ISCAS)</em>, London"
+  year: 2025
+  badge: "ISCAS"
+  pdf: "https://ieeexplore.ieee.org/document/11044218"
+  abstract_text: "This paper presents a near-imager inference hardware module enabling complex spatio-temporal pattern recognition (e.g., hand gesture or human fall). It relies on an algorithmic-architecture co-design approach leading to high accuracy at a low power consumption, optimized to handle raw data provided by an imager (row-by-row). Thanks to its 2-part deep learning model, leveraging both pipelined RTL design and near-SRAM computing, our 1Mb ASIC exhibits an estimated power consumption below 200µW at 20fps. Among our contributions is the definition (with its dedicated training) of fully binarized Gated Recurrent Units compatible with an optimized near-SRAM hardware."
+  bibtex_text: |
+    @inproceedings{guicquero2025smartnmc,
+      title={SmartNMC: A 1Mb-200µW-20fps near-imager spatio-temporal inference hardware module},
+      author={Guicquero, William and Pelletier, Nicolas and Nguyen, Thien and Noel, Jean-Phillipe and Pezzin, Manuel and Gary, Marjorie and Choisnet, Sylvain},
+      booktitle={IEEE Symposium on Circuits and Systems (ISCAS)},
+      year={2025},
+      organization={IEEE}
+    }
+   
+
+
+- title: "End-to-End Fully-Binarized Network Design: From Generic Learned Thermometer to Block Pruning"
+  authors: "**Thien Nguyen**, William Guicquero"
+  venue: "In <em>IEEE Conference on Artificial Intelligence Circuits and Systems (AICAS)</em>, Bordeaux"
+  year: 2025
+  badge: "AICAS"
+  pdf: "https://arxiv.org/pdf/2505.13462"
+  abstract_text: "Existing works on Binary Neural Network (BNN) mainly focus on model's weights and activations while discarding considerations on the input raw data. This article introduces Generic Learned Thermometer (GLT), an encoding technique to improve input data representation for BNN, relying on learning non linear quantization thresholds. This technique consists in multiple data binarizations which can advantageously replace a conventional Analog to Digital Conversion (ADC) that uses natural binary coding. Additionally, we jointly propose a compact topology with light-weight grouped convolutions being trained thanks to block pruning and Knowledge Distillation (KD), aiming at reducing furthermore the model size so as its computational complexity. We show that GLT brings versatility to the BNN by intrinsically performing global tone mapping, enabling significant accuracy gains in practice (demonstrated by simulations on the STL-10 and VWW datasets). Moreover, when combining GLT with our proposed block-pruning technique, we successfully achieve lightweight (under 1Mb), fully-binarized models with limited accuracy degradation while being suitable for in-sensor always-on inference use cases."
+  bibtex_text: |
+    @misc{nguyen2025endtoendfullybinarizednetworkdesign,
+      title={End-to-end fully-binarized network design: from Generic Learned Thermometer to Block Pruning}, 
+      author={Thien Nguyen and William Guicquero},
+      year={2025},
+      eprint={2505.13462},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.13462}, 
+    }
+
+
+- title: "MDGNet: a light-weight, hardware-compliant Convolutional Neural Network for efficient image inference tasks"
+  authors: "**Thien Nguyen**, William Guicquero"
+  venue: "In <em> Colloque Francophone de Traitement du Signal et des Images (GRETSI)</em>"
+  year: 2023
+  badge: "GRETSI"
+  pdf: "https://www.gretsi.fr/data/colloque/pdf/2023_nguyen1165.pdf"
+  abstract_text: "Designing hardware-compliant deep neural networks is ubiquitous to favor low-power but accurate embedded inference. In this paper, we introduce a compact convolutional network architecture, namely MDGNet, dedicated to classification tasks. MDGNet relies on depth-wise convolutions combined with a cascade of group convolutions to promote light-weight feature processing blocks. On the other hand, a Mux-skip connection (presented in a previous work) is used to fuse these components together in a hardware-compliant manner, compatible with a quantization of the model. Experimental results on two different datasets (STL-10, CelebA) demonstrate that our model allows higher performance at lower model size and computational complexity compared to prior works."
+  bibtex_text: |
+    @inproceedings{2023_nguyen1165,
+    author = "Van Thien Nguyen",
+    title = "MDGNet: a light-weight, hardware-compliant Convolutional Neural Network for efficient image inference tasks",
+    booktitle = "29° Colloque sur le traitement du signal et des images",
+    year = "2023",
+    publisher = "GRETSI - Groupe de Recherche en Traitement du Signal et des Images",
+    number = "2023-1165",
+    pages = "p. 389-392",
+    month = "Aout # 6 - Sept # 9",
+    address = "Grenoble",
+    doi = "",
+    pdf = "2023_nguyen1165.pdf",
+    }
+
+
+- title: "BILLNET: A Binarized Conv3D-LSTM Network with Logic-gated residual architecture for hardware-efficient video inference"
+  authors: "**Thien Nguyen**, William Guicquero, Gilles Sicard"
+  venue: "In <em>IEEE Workshop on Signal Processing Systems (SiPS)</em>, Rennes"
+  year: 2022
+  badge: "SiPS"
+  pdf: "https://arxiv.org/pdf/2501.14495"
+  abstract_text: "Long Short-Term Memory (LSTM) and 3D convolution (Conv3D) show impressive results for many video-based applications but require large memory and intensive computing. Motivated by recent works on hardware-algorithmic co-design towards efficient inference, we propose a compact binarized Conv3D-LSTM model architecture called BILLNET, compatible with a highly resource-constrained hardware. Firstly, BILLNET proposes to factorize the costly standard Conv3D by two pointwise convolutions with a grouped convolution in-between. Secondly, BILLNET enables binarized weights and activations via a MUX-OR-gated residual architecture. Finally, to efficiently train BILLNET, we propose a multi-stage training strategy enabling to fully quantize LSTM layers. Results on Jester dataset show that our method can obtain high accuracy with extremely low memory and computational budgets compared to existing Conv3D resource-efficient models."
+  bibtex_text: |
+    @INPROCEEDINGS{9919206,
+    author={Nguyen, Van Thien and Guicquero, William and Sicard, Gilles},
+    booktitle={2022 IEEE Workshop on Signal Processing Systems (SiPS)}, 
+    title={BILLNET: A Binarized Conv3D-LSTM Network with Logic-gated residual architecture for hardware-efficient video inference}, 
+    year={2022},
+    volume={},
+    number={},
+    pages={1-6},
+    doi={10.1109/SiPS55645.2022.9919206}}
+
+
+- title: "MOGNET: A Mux-residual quantized Network leveraging Online-Generated weights"
+  authors: "**Thien Nguyen**, William Guicquero, Gilles Sicard"
+  venue: "In <em>IEEE Conference on Artificial Intelligence Circuits and Systems (AICAS)</em>, Incheon"
+  year: 2022
+  badge: "AICAS"
+  pdf: "https://arxiv.org/pdf/2501.09531"
+  abstract_text: "This paper presents a compact model architecture called MOGNET, compatible with a resource-limited hardware. MOGNET uses a streamlined Convolutional factorization block based on a combination of 2 point-wise (1x1) convolutions with a group-wise convolution in-between. To further limit the overall model size and reduce the on-chip required memory, the second point-wise convolution's parameters are on-line generated by a Cellular Automaton structure. In addition, MOGNET enables the use of low-precision weights and activations, by taking advantage of a Multiplexer mechanism with a proper Bitshift rescaling for integrating residual paths without increasing the hardware-related complexity. To efficiently train this model we also introduce a novel weight ternarization method favoring the balance between quantized levels. Experimental results show that given tiny memory budget (sub-2Mb), MOGNET can achieve higher accuracy with a clear gap up to 1% at a similar or even lower model size compared to recent state-of-the-art methods."
+  bibtex_text: |
+    @INPROCEEDINGS{9869933,
+    author={Nguyen, Van Thien and Guicquero, William and Sicard, Gilles},
+    booktitle={2022 IEEE 4th International Conference on Artificial Intelligence Circuits and Systems (AICAS)}, 
+    title={MOGNET: A Mux-residual quantized Network leveraging Online-Generated weights}, 
+    year={2022},
+    volume={},
+    number={},
+    pages={90-93},
+    doi={10.1109/AICAS54282.2022.9869933}}
+
+
+- title: "Histogram-Equalized Quantization for logic-gated Residual Neural Networks"
+  authors: "**Thien Nguyen**, William Guicquero, Gilles Sicard"
+  venue: "In <em>IEEE Symposium on Circuits and Systems (ISCAS)</em>, Austin, TX"
+  year: 2022
+  badge: "ISCAS"
+  pdf: "https://arxiv.org/pdf/2501.04517"
+  abstract_text: "Adjusting the quantization according to the data or to the model loss seems mandatory to enable a high accuracy in the context of quantized neural networks. This work presents Histogram-Equalized Quantization (HEQ), an adaptive framework for linear symmetric quantization. HEQ automatically adapts the quantization thresholds using a unique step size optimization. We empirically show that HEQ achieves state-of-the-art performances on CIFAR-10. Experiments on the STL-10 dataset even show that HEQ enables a proper training of our proposed logic-gated (OR, MUX) residual networks with a higher accuracy at a lower hardware complexity than previous work."
+  bibtex_text: |
+    @INPROCEEDINGS{9937290,
+    author={Nguyen, Van Thien and Guicquero, William and Sicard, Gilles},
+    booktitle={2022 IEEE International Symposium on Circuits and Systems (ISCAS)}, 
+    title={Histogram-Equalized Quantization for logic-gated Residual Neural Networks}, 
+    year={2022},
+    volume={},
+    number={},
+    pages={1289-1293},
+    keywords={Training;Adaptation models;Histograms;Quantization (signal);Neural networks;Hardware;Data models;CNN;quantized neural networks;histogram equalization;skip connections;logic-gated CNN},
+    doi={10.1109/ISCAS48785.2022.9937290}}
+
+
+- title: "Luminance-depth reconstruction from compressed time-of-flight histograms"
+  authors: "Valentin Poisson, **Thien Nguyen**, William Guicquero, Gilles Sicard"
+  venue: "In <em>IEEE Transactions on Computational Imaging (TCI)</em>"
+  year: 2022
+  badge: "TCI"
+  pdf: "https://cea.hal.science/cea-04557424v1/document"
+  abstract_text: "Single photon avalanche diodes (SPADs) combined with high-frequency time-to-digital converters (TDCs) enable the estimation of photon Time-of-Flight (ToF) for active 3D-depth imaging. Nevertheless, SPAD sensors still face hardware limitations due to a complex pixel readout design and a large amount of data collected by way of pixel-wise histograms. The intrinsic high background illumination (BI) also remains a challenging issue for the related depth reconstruction algorithms. Using a physically-relevant SPAD sensor model, this work tackles these issues by implementing a pixel-wise ToF histogram compressive sensing (CS) with a specific deep generative model based reconstruction. It demonstrates a possible reduction of hardware design constraints while reaching a depth inference root mean square error below 16 centimeters regardless of BI (50–1050 W/22) and distance (20 m), at a compression ratio (CR) of 10% (32 CS measurements). In addition, this paper introduces a novel multimodal reconstruction from SPAD data, enabling joint depth and luminance estimations. Indeed, since ToF histogram raw data gathers multiple physical scene characteristics, we propose a two-part deep generative model (DGM) capable of inferring Super-Resolved depth maps and normalized luminance images, independently from the average scene BI. Our key contributions related to the DGM topology design are the introduction of proper normalization layers with a learned pile-up effect compensation, multidimensional-multiscale filtering and the concatenation of Softmax-ReLU activation functions to capture both peak-position and relative amplitude features. Numerically, depth and luminance maps reconstructions of natural scenes respectively reach more than 30 dB and 25 dB PSNRs for any CR higher than 2.5%."
+  bibtex_text: |
+    @ARTICLE{9706248,
+    author={Poisson, Valentin and Nguyen, Van Thien and Guicquero, William and Sicard, Gilles},
+    journal={IEEE Transactions on Computational Imaging}, 
+    title={Luminance-Depth Reconstruction From Compressed Time-of-Flight Histograms}, 
+    year={2022},
+    volume={8},
+    number={},
+    pages={148-161},
+    keywords={Single-photon avalanche diodes;Sensors;Photonics;Imaging;Histograms;Image reconstruction;Spatial resolution;3-D imaging;deep generative model;LiDAR;single-photon detection;super-resolution;statistical compressive sensing;time-of-flight imaging},
+    doi={10.1109/TCI.2022.3149088}}
+
+
+- title: "A 1Mb mixed-precision quantized encoder for image classification and patch-based compression"
+  authors: "**Thien Nguyen**, William Guicquero, Gilles Sicard"
+  venue: "In <em>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</em>"
+  year: 2022
+  badge: "TCSVT"
+  pdf: "https://cea.hal.science/cea-04557424v1/document"
+  abstract_text: "Even if Application-Specific Integrated Circuits (ASIC) have proven to be a relevant choice for integrating inference at the edge, they are often limited in terms of applicability. In this paper, we demonstrate that an ASIC neural network accelerator dedicated to image processing can be applied to multiple tasks of different levels: image classification and compression, while requiring a very limited hardware. The key component is a reconfigurable, mixed-precision (3b/2b/1b) encoder that takes advantage of proper weight and activation quantizations combined with convolutional layer structural pruning to lower hardware-related constraints (memory and computing). We introduce an automatic adaptation of linear symmetric quantizer scaling factors to perform quantized levels equalization, aiming at stabilizing quinary and ternary weights training. In addition, a proposed layer-shared Bit-Shift Normalization significantly simplifies the implementation of the hardware-expensive Batch Normalization. For a specific configuration in which the encoder design only requires 1Mb, the classification accuracy reaches 87.5% on CIFAR-10. Besides, we also show that this quantized encoder can be used to compress image patch-by-patch while the reconstruction can performed remotely, by a dedicated full-frame decoder. This solution typically enables an end-to-end compression almost without any block artifacts, outperforming patch-based state-of-the-art techniques employing a patch-constant bitrate."
+  bibtex_text: |
+    @ARTICLE{9687541,
+    author={Nguyen, Van Thien and Guicquero, William and Sicard, Gilles},
+    journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+    title={A 1Mb Mixed-Precision Quantized Encoder for Image Classification and Patch-Based Compression}, 
+    year={2022},
+    volume={32},
+    number={8},
+    pages={5581-5594},
+    keywords={Quantization (signal);Image coding;Hardware;Task analysis;Convolution;Neural networks;Training;Hardware-algorithm co-design;quantization;pruning;autoencoder;patch-based image compression},
+    doi={10.1109/TCSVT.2022.3145024}}
+
+
+- title: "Deep Neural Networks with on-the-fly generated weights from Automatic Number Generators"
+  authors: "**Thien Nguyen**, William Guicquero"
+  venue: "Patent (pending)"
+  year: 2022
+  badge: "Patent"
+  pdf: "https://www.freepatentsonline.com/y2023/0205956.html"
+  abstract_text: ""
+  bibtex_text: |
+    @misc{guicquero2023neural,
+      title={NEURAL NETWORK WITH ON-THE-FLY GENERATION OF THE NETWORK PARAMETERS},
+      author={Guicquero, William and Nguyen, Van-thien},
+      year={2023},
+      month=jun # "~29",
+      note={US Patent App. 18/145,236}
+    }
+
+
+- title: "Full-resolution estimation of temperature-emissivity from multispectral thermal infrared imaging"
+  authors: "**Thien Nguyen**, William Guicquero"
+  venue: "Patent (pending)"
+  year: 2024
+  badge: "Patent"
+  pdf: 
+  abstract_text: ""
+  bibtex_text: 
+
+
+

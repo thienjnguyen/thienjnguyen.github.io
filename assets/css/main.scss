@@ -7,3 +7,134 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 0.9em;
+}
+
+p {
+  font-size: 1.0em;
+}
+
+li {
+  font-size: 1.0em; // or 16px, or whatever size you prefer
+  line-height: 1.0em;
+}
+
+body {
+  text-align: justify;
+  text-justify: inter-word; // Optional: improves spacing between words
+}
+
+.page__content,
+.page__content p,
+.page__content li,
+.page__content ul,
+.page__content ol {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.publications {
+  .year-block {
+    margin-bottom: 2em;
+    position: relative;
+    border-top: 1px solid #ddd;
+  }
+
+  .pub-year {
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ccc;
+  }
+
+  .pub-entry {
+    font-size: 16px; /* Adjust as needed: try 14px, 16px, or 18px */
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    padding-right: 5em;
+    // border-top: 1px solid #eee;
+    border-top: none;
+    padding-top: 1em;
+  }
+
+  .pub-badge {
+    background-color: #0a1f44; /* Dark navy blue */
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .pub-buttons {
+    margin-top: 0.5em;
+
+    .btn {
+      background: none;
+      border: 1px solid #aaa;
+      padding: 0.3em 0.7em;
+      margin-right: 0.5em;
+      font-size: 0.85em;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+  }
+
+  .pub-title {
+    font-size: 20px; /* Larger for titles */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 0.2em;
+  }
+
+  .pub-authors {
+    font-size: 16px;
+  }
+
+  .pub-conference {
+    font-size: 16px;
+    font-style: italic;
+  }
+  .venue-location {
+    font-style: normal;
+  }
+}
+
+.toggle-content {
+  display: none;
+  margin-top: 0.8em;
+  padding: 0.8em;
+  border: 1px dashed #aaa;
+  background-color: #222;
+  color: #eee;
+  white-space: pre-wrap;
+
+  &.bibtex {
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+
+  &.show {
+    display: block;
+  }
+}
+
+
+.icon--researchgate {
+  width: 0.1em;
+  height: auto;
+  vertical-align: middle;
+}

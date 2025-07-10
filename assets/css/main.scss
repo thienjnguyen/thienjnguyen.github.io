@@ -61,8 +61,8 @@ body {
 
   .pub-entry {
     font-size: 16px; /* Adjust as needed: try 14px, 16px, or 18px */
-    line-height: 1.6;
-    margin-bottom: 1.5em;
+    line-height: 1.2;
+    margin-bottom: 0.6em;
     padding-right: 5em;
     // border-top: 1px solid #eee;
     border-top: none;
@@ -98,18 +98,24 @@ body {
     font-weight: bold;
     font-size: 1.1em;
     margin-top: 0.2em;
+    margin-bottom: 0.2em;
   }
 
   .pub-authors {
     font-size: 16px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
   }
 
   .pub-conference {
     font-size: 16px;
     font-style: italic;
+    margin-top: 0.2em;
   }
   .venue-location {
     font-style: normal;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
   }
 }
 

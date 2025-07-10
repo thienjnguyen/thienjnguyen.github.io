@@ -1,6 +1,6 @@
 education:
-  - degree: "Ph.D. in Machine Learning"
-    institution: "University of Grenoble-Alpes & CEA-LETI"
+  - degree: "Ph.D. in Machine Learning & Signal Processing"
+    institution: "University of Grenoble-Alpes"
     location: "Grenoble, France"
     start: "11/2019"
     end: "11/2022"
@@ -21,14 +21,14 @@ education:
     description: 
 
 experience:
-  - title: "Machine Learning & Computer Vision Researcher"
+  - title: "Machine Learning & Computer Vision/Image Processing Researcher"
     company: "CEA-LETI"
     location: "Grenoble, France"
     start: "12/2022"
     end: "Present"
     description: 
 
-  - title: "Ph.D. Candidate in Machine Learning"
+  - title: "Ph.D. Candidate in Machine Learning & Signal Processing"
     company: "CEA-LETI"
     location: "Grenoble, France"
     start: "11/2019"

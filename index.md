@@ -8,7 +8,7 @@ classes: wide
 # title: ""
 ---
 
-# Thien Nguyen 👋
+# Thien Nguyen
 
 
 
@@ -27,15 +27,15 @@ Smart Embedded Imaging Laboratory (L3I), [CEA-LETI](https://www.leti-cea.fr/cea-
 
 ## Research Interests
 
-- Machine Learning, particularly on TinyML for hardware-compatible deployment
-- Computer vision and Image processing  
-- Intersection of vision and language for multimodal applications or knowledge transferring 
-- Small/Large language models  
+- Machine Learning, with a focus on TinyML for efficient, hardware-compatible deployment
+- Computer Vision and Image Processing using interpretable neural architectures and feature learning  
+- Multimodal learning at the intersection of vision and language, including knowledge transfer across modalities 
+- Language Models—ranging from compact architectures to large-scale systems  
 
 
 ## Contact
 
-You can reach me at [thien.ngvan1@gmail.com](mailto:thien.ngvan1@gmail.com) 
+You can reach me at [vanthien.nguyen@cea.fr](mailto:vanthien.nguyen@cea.fr) (Working email) or [thien.ngvan1@gmail.com](mailto:thien.ngvan1@gmail.com) (Personal email)
 
 ---
 

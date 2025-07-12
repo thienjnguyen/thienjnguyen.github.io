@@ -6,11 +6,17 @@
         <div class="content-column">
           <h3>{{ item.degree }}</h3>
           <p><strong>{{ item.institution }}</strong>, {{ item.location }}</p>
-          <ul class="description-list">
-            {% for point in item.description %}
-              <li>{{ point }}</li>
-            {% endfor %}
-          </ul>
+          {% if item.description %}
+            {% if item.description[0] %}
+              <ul class="description-list">
+                {% for point in item.description %}
+                  <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>{{ item.description }}</p>
+            {% endif %}
+          {% endif %}
           <!-- <p>{{ item.description }}</p> -->
         </div>
         <div class="timeline-column">
@@ -30,7 +36,17 @@
         <div class="content-column">
           <h3>{{ item.title }}</h3>
           <p><strong>{{ item.company }}</strong>, {{ item.location }}</p>
-          <p>{{ item.description }}</p>
+          {% if item.description %}
+            {% if item.description[0] %}
+              <ul class="description-list">
+                {% for point in item.description %}
+                  <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>{{ item.description }}</p>
+            {% endif %}
+          {% endif %}
         </div>
         <div class="timeline-column">
           <p>{{ item.start }} – {{ item.end }}</p>
@@ -40,10 +56,8 @@
   </div>
   <h2 id="full-cv">📄 Full CV</h2>
   <p>
-    You can download my complete CV here: <br>
-    <a href="/assets/files/CV_Thien_NGUYEN.pdf" target="_blank">
-     My CV (PDF)
-    </a>
+    You can download my complete CV
+    <a href="/assets/files/CV_Thien_NGUYEN.pdf" target="_blank"> here </a>
   </p>
 
 </div>

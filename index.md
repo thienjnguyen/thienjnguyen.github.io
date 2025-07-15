@@ -20,7 +20,7 @@ Smart Embedded Imaging Laboratory (L3I), [CEA-LETI](https://www.leti-cea.fr/cea-
 
 🔍 Lately, I’ve been exploring the intersection of vision and language—investigating how large language models can be integrated with diverse visual encoders to create robust multimodal systems. My research aims to push the boundaries of what’s possible in real-world AI deployment by balancing performance, interpretability, and efficiency. 
 
-🎓 I earned my PhD in Machine Learning and Signal Processing from the University of Grenoble-Alpes and CEA-LETI in 2022, under the guidance of [William Guicquero](https://scholar.google.com/citations?hl=en&user=kkvArFAAAAAJ&view_op=list_works&sortby=pubdate) and [Gilles Sicard](https://www.researchgate.net/profile/Gilles-Sicard-2). Prior to that, I got my engineering degree in Automation systems and Signal processing from INSA Centre Val de Loire in 2019. 
+🎓 I earned my PhD in Machine Learning and Signal Processing from the University of Grenoble-Alpes and CEA-LETI in 2022. Prior to that, I got my engineering degree in Automation systems and Signal processing from INSA Centre Val de Loire in 2019. 
 
 🚀 My goal is to bridge the gap between theory and practice—crafting explainable AI paradigms that are ready for the edge.
 
